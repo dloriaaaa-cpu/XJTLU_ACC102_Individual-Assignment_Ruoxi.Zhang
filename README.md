@@ -1,38 +1,37 @@
 # XJTLU_ACC102_Individual-Assignment_Ruoxi.Zhang
 Stock risk-return analysis for ACC102 individual assignment
-# Stock Risk & Return Analysis with WRDS
+# Stock Analysis Tool
 
-This project is a Python-based financial analysis tool that connects to the WRDS (Wharton Research Data Services) database, retrieves stock price data, and visualizes the relationship between risk (standard deviation of returns) and return (mean return) for selected stocks.
+A Python-based stock analysis tool that connects to the WRDS (Wharton Research Data Services) database to perform comprehensive stock performance analysis and visualization.
 
 ## Features
 
-- Connect to WRDS securely using the `wrds` Python library.
-- Choose between:
-  - **Mode A**: Compare stocks from different industries.
-  - **Mode B**: Compare stocks within the same industry.
-- Input custom stock tickers and a start date.
-- Fetch historical price data from the CRSP database.
-- Clean and process data to calculate daily returns.
-- Generate a scatter plot of **Risk vs. Return** for the selected stocks.
-- Loop to test different start dates without restarting the notebook.
-- Automatically handle connection errors and reconnect to WRDS if needed.
+- **Multi-Stock Comparison**: Analyze and compare multiple stocks simultaneously
+- **Two Analysis Modes**:
+  - **Mode A**: Compare stocks across different industries
+  - **Mode B**: Compare stocks within the same industry
+- **Comprehensive Visualizations**:
+  - Stock Price Trend Chart
+  - Cumulative Returns Plot
+  - Risk vs Return Scatter Plot
+  - 30-Day Rolling Volatility Chart
+  - Correlation Heatmap
+  - Efficient Frontier Analysis with randomized portfolio weights
+- **Performance Metrics**:
+  - Sharpe Ratio calculation and ranking
+  - Portfolio optimization visualization
 
-## Requirements
+## Prerequisites
 
-- Python 3.7+
-- WRDS account (with access to CRSP)
-- PostgreSQL `.pgpass` file setup (automatically created by the script)
+- Python 3.x
+- WRDS account credentials
+- Required Python packages:
+  - `wrds`
+  - `pandas`
+  - `numpy`
+  - `matplotlib`
 
-## Python Libraries
-
-- `wrds`
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `psycopg2-binary`
-- `sqlalchemy`
-
-You can install dependencies using:
+## Installation
 
 ```bash
-pip install wrds pandas matplotlib
+pip install wrds pandas numpy matplotlib
