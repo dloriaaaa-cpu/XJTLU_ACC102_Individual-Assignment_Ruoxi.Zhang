@@ -73,6 +73,18 @@ The tool generates the following outputs:
 6. **Sharpe Ratio Ranking** - Risk-adjusted return ranking
 7. **Efficient Frontier** - Portfolio optimization visualization
 
+## Time Handling and Visualization Improvements
+
+The program dynamically determines the observation window based on the user-provided start date and the latest available data in WRDS.
+
+To ensure clear and professional visualization, the time series is automatically resampled:
+
+- Daily frequency for short periods
+- Weekly frequency for medium periods
+- Monthly frequency for long periods
+
+In addition, the x-axis date labels are formatted and rotated to avoid overlap and improve readability.
+
 ## Technical Details
 
 - Uses CRSP daily stock file (`crsp.dsf`) for price data
