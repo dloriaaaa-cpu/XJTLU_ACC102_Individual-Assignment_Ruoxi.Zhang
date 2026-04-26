@@ -1,5 +1,5 @@
 # XJTLU_ACC102_Individual-Assignment_Ruoxi.Zhang
-Stock risk-return analysis for ACC102 individual assignment
+Interactive  Stock Portfolio Analyzer Assistant for ACC102 individual assignment
 # Stock Analysis Tool
 
 A Python-based stock analysis tool that connects to the WRDS (Wharton Research Data Services) database to perform comprehensive stock performance analysis and visualization.
