@@ -77,13 +77,15 @@ The tool generates the following outputs:
 
 The program dynamically determines the observation window based on the user-provided start date and the latest available data in WRDS.
 
-To ensure clear and professional visualization, the time series is automatically resampled:
+To ensure clear and professional visualization, the time series is automatically **resampled**:
 
-- Daily frequency for short periods
-- Weekly frequency for medium periods
-- Monthly frequency for long periods
+| Period Length | Frequency Used |
+|---------------|----------------|
+| Short (≤ 60 days) | Daily |
+| Medium (≤ 2 years) | Weekly |
+| Long (> 2 years) | Monthly |
 
-In addition, the x-axis date labels are formatted and rotated to avoid overlap and improve readability.
+In addition, the x-axis date labels are **formatted and rotated** to avoid overlap and improve readability.
 
 ## Technical Details
 
